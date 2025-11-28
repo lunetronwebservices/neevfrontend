@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useSidebar } from "../context/SidebarContext";
+import OrganizationList from "@/app/(admin)/(others-pages)/organizationList/page";
 import {
   BoxCubeIcon,
   CalenderIcon,
@@ -42,6 +43,13 @@ const navItems: NavItem[] = [
     name: "User Profile",
     path: "/profile",
   },
+  // this is chnage by me
+   {
+    icon: <UserCircleIcon />,
+    name: "Order list",
+    path: "/orderList",
+  },
+
 
   {
     name: "Forms",
