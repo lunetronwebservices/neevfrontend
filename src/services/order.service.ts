@@ -22,3 +22,7 @@ export function makePayment(orderId: number, payload: any) {
 export function getInvoice(invoiceId: number) {
     return api.get(endpoints.invoice(invoiceId));
 }
+
+export function getOrders(params?: any) {
+    return api.get(endpoints.orders, { params });
+}

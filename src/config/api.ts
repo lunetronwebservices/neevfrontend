@@ -16,6 +16,9 @@ export const endpoints = {
     // Orders
     orders: `${API_BASE_URL}/orders/`,
 
+    //payments
+     payments: `${API_BASE_URL}/payments/`,
+
     // Order Actions
     uploadDocument: (orderId: number) =>
         `${API_BASE_URL}/orders/${orderId}/upload-document/`,
